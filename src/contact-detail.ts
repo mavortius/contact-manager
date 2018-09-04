@@ -1,5 +1,5 @@
 import { WebAPI } from "./web-api";
-import { inject } from "aurelia-framework";
+import { autoinject } from "aurelia-framework";
 import { areEqual } from "./utility";
 import { EventAggregator } from "aurelia-event-aggregator";
 import { ContactUpdated, ContactViwed } from "./message";
@@ -10,7 +10,7 @@ interface Contact {
   email: string;
 }
 
-@inject(WebAPI, EventAggregator)
+@autoinject
 export class ContactDetail {
   routeConfig;
   contact: Contact;
