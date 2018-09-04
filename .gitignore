@@ -29,3 +29,10 @@ node_modules
 
 # Compiled files
 scripts
+/.vscode/
+.vscode/
+dist/
+src/resources/attributes/
+src/resources/binding-behaviors/
+src/resources/value-converters/
+test/unit/
